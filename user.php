@@ -19,8 +19,16 @@
                 <b>
                   <?= $_COOKIE['login'] ?>
                 </b>
-                
             </p>
+            <form method="post" action="/lib/add-game.php" >
+                <label>Image</label>
+                <input type="text"  name="image" class="one-line">
+
+                <label>Followers</label>
+                <input type="text" name="followers" class="one-line">
+
+                <button type="submit">Add</button>
+            </form>
         </div>
     </div>
 
