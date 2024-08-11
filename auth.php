@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration</title>
+    <title>Auth</title>
     <link rel="stylesheet" href="/css/main.css">
 </head>
 
@@ -13,7 +13,7 @@
 
     <div class="feedback">
         <div class="container">
-            <h2>Register</h2>
+            <h2>Login</h2>
             <form method="post" action="/lib/reg.php" >
                 <div class="inline">
                     <div>
@@ -21,17 +21,11 @@
                         <input name="login" type="text">
                     </div>
                     <div>
-                        <label>Name</label>
-                        <input name="username" type="text">
+                    <label>Password</label>
+                    <input type="password" name="password">
                     </div>
                 </div>
-                <label>Email Address</label>
-                <input type="email"  name="email" class="one-line">
-
-                <label>Password</label>
-                <input type="password" name="password" class="one-line">
-
-                <button type="submit">Send</button>
+                <button type="submit">Enter</button>
             </form>
         </div>
     </div>
