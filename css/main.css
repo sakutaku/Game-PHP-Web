@@ -23,12 +23,12 @@ img {
 
 .wrapper {
     background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(26, 14, 1, 1) 100%);
-    width: 100%;
+    max-width: 100%;
     overflow-x: hidden;
 }
 
 .container {
-    width: 1400px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
@@ -538,4 +538,10 @@ footer hr {
 
 footer>p {
     text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+    .hero img {
+        display: none;
+    }
 }

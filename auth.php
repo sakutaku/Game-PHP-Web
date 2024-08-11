@@ -14,7 +14,7 @@
     <div class="feedback">
         <div class="container">
             <h2>Login</h2>
-            <form method="post" action="/lib/reg.php" >
+            <form method="post" action="/lib/auth.php" >
                 <div class="inline">
                     <div>
                         <label>Login</label>

@@ -1,4 +1,5 @@
 <?php
+require "db.php";
     $login = trim(filter_var($_POST['login'], FILTER_SANITIZE_SPECIAL_CHARS));
     $username = trim(filter_var($_POST['username'], FILTER_SANITIZE_SPECIAL_CHARS));
     $email = trim(filter_var($_POST['email'], FILTER_SANITIZE_SPECIAL_CHARS));
@@ -27,9 +28,6 @@
 // Password
 $salt = '1234`ojkbv-??0-';
 $password = md5($salt.$password);   
-        
-// DB connection
-$pdo = new PDO('mysql:hots=localhost;dbname=php-project;port=8889', 'root', 'root');
 
 // INSERT
 $sql = 'INSERT INTO users(login, username, email, password) VALUES(?, ?, ?, ?)';
